@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">JecDex</string>
+
+
+    <string-array name="branches">
+        <item>CS</item>
+        <item>EC</item>
+        <item>IT</item>
+        <item>IP</item>
+        <item>ME</item>
+        <item>CE</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+    </string-array>
+</resources>
