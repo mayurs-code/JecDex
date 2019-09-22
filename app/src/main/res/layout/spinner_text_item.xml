@@ -2,15 +2,14 @@
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fontFamily="@font/montserrat"
+    android:fontFamily="@font/roboto_medium"
     android:orientation="vertical"
     android:padding="8dp"
-    android:textSize="20sp"
+    android:textSize="15sp"
     android:background="@color/white"
     android:gravity="center"
-
     android:textAlignment="center"
-    android:text="Sample Text"
+    android:text="Item Selected"
     android:textColor="@color/greyPrimaryDark">
 
 

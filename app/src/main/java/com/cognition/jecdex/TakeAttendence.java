@@ -39,7 +39,7 @@ public class TakeAttendence extends AppCompatActivity {
     }
     void subject_spinner() {
         Spinner branchSpinner = (Spinner) findViewById(R.id.sub_spinner);
-        String subjects[]={"BT1001","BT1001","BT1001","BT1001"};
+        String subjects[]={"BT1001","BT1002","BT1003","BT1004"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String >(this,R.layout.spinner_text_item,subjects);
         adapter.setDropDownViewResource(R.layout.spinner_text_dropdown);
         branchSpinner.setAdapter(adapter);
