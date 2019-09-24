@@ -8,7 +8,9 @@
     <color name="white">#ffffff</color>
     <color name="highlight">#0C3075</color>
     <color name="black">#000000</color>
-    <color name="valid">#00C4FF</color>
+    <color name="green">#02C5E2</color>
+    <color name="light_green">#67B8FF</color>
+    <color name="light_red">#FF5252</color>
 
 
 </resources>

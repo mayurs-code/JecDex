@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TakeAttendence"></activity>
+        <activity android:name=".ShowActivities.AddSubject"></activity>
+        <activity android:name=".ShowActivities.AttendenceActivity" />
+        <activity android:name=".ShowActivities.TakeAttendence" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -3,7 +3,7 @@
 
 
     <string-array name="branches">
-        <item>CS</item>
+        <item>[CS] Computer Science &amp; Engineering</item>
         <item>EC</item>
         <item>IT</item>
         <item>IP</item>

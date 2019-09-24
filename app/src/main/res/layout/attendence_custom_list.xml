@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemLayout"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:background="@color/greyPrimary"
+    android:elevation="5dp"
+
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/statusChip"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        app:chipBackgroundColor="@color/light_red"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_height="match_parent"
+        android:text="ABSENT"/>
+    <TextView
+        android:id="@+id/rollnoText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="20sp"
+        android:textColor="@color/light_red"
+        android:text="Sample Text"/>
+
+</LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/greyPrimary"
-    tools:context=".TakeAttendence">
+    tools:context=".ShowActivities.TakeAttendence">
 
 
     <View
@@ -15,7 +15,7 @@
         android:layout_marginStart="8dp"
 
         android:layout_marginEnd="8dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/gradiant_primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,14 +30,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:backgroundTint="@color/white"
-        android:layout_marginTop="160dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -45,34 +45,86 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:padding="4dp"
+            android:layout_height="match_parent"
             android:gravity="center"
-            android:layout_height="match_parent">
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="3">
 
             <Spinner
                 android:id="@+id/branch_spinner"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/greyPrimaryDark"/>
+                android:layout_weight="1"
+                android:background="@color/greyPrimaryDark" />
+
             <Spinner
                 android:id="@+id/year_spinner"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/greyPrimaryDark"/>
+                android:layout_weight="1"
+                android:background="@color/greyPrimaryDark" />
+
             <Spinner
                 android:id="@+id/sub_spinner"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/greyPrimaryDark"/>
+                android:layout_weight="1"
+                android:background="@color/greyPrimaryDark" />
 
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/attendenceActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalStudents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_black"
+                android:text="120"
+                android:textColor="@color/white"
+                android:textSize="64sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:text="TOTAL STUDENTS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/attendenceActivity"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Take Attendence for subject"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 
